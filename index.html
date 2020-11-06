@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="container">
+      <div class="row">
+        <div class="box about_me">
+          <div class="tit_box me_tit">
+            <h2>나는 누구일까?</h2>
+          </div>
+          <div class="content_box me_content">
+            <p>알면 알려줘</p>
+          </div>
+        </div>
+        <div class="box about_you">
+          <div class="tit_box you_tit">
+            <h2>그럼 너는 누구니?</h2>
+          </div>
+          <div class="content_box you_content">
+            <p>그걸 알겠니?</p>
+          </div>
+        </div>
+        <div class="box money500">
+          <div class="tit_box money_tit">
+            <h2>궁금하면 500원</h2>
+          </div>
+          <div class="content_box money_content">
+            <p>고마워 잘쓸게</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/jquery.min.js"></script>
+  <script>
+    $('.tit_box').on('click',function(){
+      $('.box').toggleClass('hide');
+      $(this).parent().removeClass('hide').toggleClass('active');
+    })
+  </script>
+</body>
+</html>
